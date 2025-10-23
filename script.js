@@ -1,7 +1,10 @@
 let problems = [];
 let solvedSet = new Set();
 
+console.log("Script loaded ✅");
 async function loadProblems() {
+  console.log("Script loadedeeeeee ✅");
+
 const sheetUrl = "https://api.allorigins.win/raw?url=" + encodeURIComponent("https://docs.google.com/spreadsheets/d/e/2PACX-1vR1RbzSSrpsrBuAadVRSM-jzL7une4RuTurzkmdtjjtg-2JHW-PyLxhKyZy6EpqAYTVWjyMbTxrceEO/pub?output=csv");
   try {
     const res = await fetch(sheetUrl);
