@@ -2,7 +2,7 @@ let problems = [];
 let solvedSet = new Set();
 
 async function loadProblems() {
-  const sheetUrl = "PASTE_YOUR_GOOGLE_SHEETS_CSV_LINK_HERE";
+  const sheetUrl = "https://docs.google.com/spreadsheets/d/1HSm54cpfblhF3qBjl-WkyoObP3L57AAX4hv-1ovIaRM/edit?usp=sharing";
   const res = await fetch(sheetUrl);
   const text = await res.text();
   problems = text.split("\n").slice(1).map(line => {
