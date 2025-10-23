@@ -2,7 +2,7 @@ let problems = [];
 let solvedSet = new Set();
 
 async function loadProblems() {
-  const sheetUrl = "https://docs.google.com/spreadsheets/d/1HSm54cpfblhF3qBjl-WkyoObP3L57AAX4hv-1ovIaRM/edit?usp=sharing";
+  const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR1RbzSSrpsrBuAadVRSM-jzL7une4RuTurzkmdtjjtg-2JHW-PyLxhKyZy6EpqAYTVWjyMbTxrceEO/pub?output=csv";
   const res = await fetch(sheetUrl);
   const text = await res.text();
   problems = text.split("\n").slice(1).map(line => {
