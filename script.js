@@ -2,7 +2,7 @@ let problems = [];
 let solvedSet = new Set();
 
 async function loadProblems() {
-  const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR1RbzSSrpsrBuAadVRSM-jzL7une4RuTurzkmdtjjtg-2JHW-PyLxhKyZy6EpqAYTVWjyMbTxrceEO/pub?output=csv";
+  const sheetUrl = "https://cors.isomorphic-git.org/https://docs.google.com/spreadsheets/d/e/2PACX-1vR1RbzSSrpsrBuAadVRSM-jzL7une4RuTurzkmdtjjtg-2JHW-PyLxhKyZy6EpqAYTVWjyMbTxrceEO/pub?output=csv";
   try {
     const res = await fetch(sheetUrl);
     const text = await res.text();
